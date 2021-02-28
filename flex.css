@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    height: 100vh;
+    width: 100%;
+    border: 10px solid black;
+    display: flex;
+    background-color:darkslategrey;
+     /* justify-content: space-evenly; */
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+}
+
+
+
+.one{
+    background-color: wheat;
+    width: 150px;
+    height: 100px;
+}
+.two{
+    background-color: aquamarine;
+    width: 150px;
+    height: 100px;
+}
+.three{
+    background-color: blueviolet;
+    width: 150px;
+    height: 100px;
+}
+.four{
+    background-color: coral;
+    width: 150px;
+    height: 100px;
+}

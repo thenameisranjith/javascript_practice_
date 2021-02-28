@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+            constructor(name, age) {
+                this.myName = name;
+                this.myAge = age;
+
+            }
+            bioData() {
+                console.log(`Student Details ${this.myName},    ${this.myAge}`)
+            }
+        }
+
+        // let myobj = new Student('Ranjith', 35);
+        // let myobj1 = new Student('Sanjith', 45);
+        // myobj.bioData();
+        // myobj1.bioData();
+
+
+        class ChildStudent extends Student {
+            constructor(name, age, game) {
+                super(name, age)
+                this.myGame = game;
+            }
+            studentGameDetails() {
+                console.log(`Student Game Details ${this.myName},    ${this.myAge}, ${this.myGame}`)
+            }
+
+        }
+
+
+        let myobj3 = new ChildStudent('Ranjith', 35, "Koo ko");
+        myobj3.studentGameDetails();
+
+
+
+    </script>
+</body>
+
+</html>

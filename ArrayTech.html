@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var myList = [34, 67, 45, 79, 90, 12];
+
+
+        // for (let i = myList.length - 1; i >= 0; i--) {
+        //     document.write(myList[i] + " ")
+        // }
+
+        // var numbers = [23, 55, 65, 57, 78];
+        // var reversedNum = [];
+        // for (let i = numbers.length - 1; i >= 0; i--) {
+        //     reversedNum.push(numbers[i]);
+
+        // }
+        // console.log(reversedNum)
+        // document.write("<br/>" + "")
+        // document.write("=========Reverse order==============")
+
+
+
+
+
+        // var myList = [34, 67, 45, 79, 90, 12, 34, 12, 12];
+
+        // var count = {};
+
+        // for (let i = 0; i < myList.length; i++) {
+        //     let number = myList[i];
+        //     if (count[number]) {
+        //         count[number]++
+        //     }
+        //     else {
+        //         count[number] = 1;
+        //     }
+        // }
+        // console.log(count)
+
+
+        // console.log("===========FREQUENCY============")
+
+
+        // const countZero = (numbers) => {
+        //     let count = 0;
+        //     for (let i = 0; i < numbers.length; i++) {
+        //         if (numbers[i] === 0) {
+        //             count++;
+        //         }
+        //     }
+        //     return count;
+        // }
+
+
+        // let mynumbers = [1, 0, 1, 0, 1, 0, 0]
+        // console.log(countZero(mynumbers));
+
+        // console.log("===========COUNT 1 AND 0 ============")
+
+
+
+
+
+
+        // const countZero = (numbers, myLuckyNumber) => {
+        //     let count = 0;
+        //     for (let i = 0; i < numbers.length; i++) {  
+        //         if (numbers[i] === myLuckyNumber) {
+        //             return true
+        //             break
+        //         }
+
+        //     }
+        //     return false
+        // }
+
+
+        // let mynumbers = [90, 54, 56, 67, 67, 89]
+        // console.log(countZero(mynumbers, 66));
+
+        // console.log("===========SPECIFIC NUMBER  ============");
+
+
+
+
+
+
+
+        // var array = [1, 2, 3, 5, 1, 5, 9, 1, 2, 8];
+
+        // console.log(new Set(array))
+
+
+        // console.log("===========UNIQUE NUMBERS  ============");
+
+
+
+        // var mynumbers = [12, 2, 12, 3, 9, 2, 9, 89]
+        // var count = 0;
+        // for (i = 0; i < mynumbers.length; i++) {
+        //     count = 0;
+        //     for (j = 0; j < mynumbers.length; j++) {
+        //         if (mynumbers[i] == mynumbers[j]) {
+        //             count++;
+        //         }
+        //     }
+        //     if (count == 1) {
+        //         document.write("--->", mynumbers[i]);
+        //     }
+        // }
+
+
+
+        var mynum = [45, 45, 57, 57, 68, 68, 88, 80];
+        let count = 0;
+        for (let i = 0; i < mynum.length; i++) {
+
+            for (let j = i + 1; j < mynum.length; j++) {
+                if (mynum[i] == mynum[j]) {
+                    count++;
+                }
+            }
+            if (count === 1) {
+                console.log(mynum[i]);
+            }
+            console.log("===========")
+        }
+
+
+
+    </script>
+</body>
+
+</html>

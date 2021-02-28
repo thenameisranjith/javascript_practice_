@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let colors = ["red", "orange", "green"];
+        colors.push("blue");
+
+        document.write("push ===> " + colors);
+        document.write("<br>");
+        document.write("________________");
+        document.write("<br>");
+
+        colors.unshift("yellow");
+        document.write("<br>");
+
+        document.write("unshift ===> " + colors);
+        document.write("<br>");
+
+        colors.pop();
+        document.write("pop==> " + colors);
+        document.write("<br>");
+        document.write("________________");
+        document.write("<br>");
+
+
+        colors.shift();
+        document.write("shift ==> " + colors);
+        document.write("<br>");
+        document.write("________________");
+        document.write("<br>");
+
+
+
+        let cars = ["skoda", "toyota", "hyndai"];
+        document.write("<br>");
+        document.write("________________");
+        document.write("<br>");
+        document.write("concat==> " + colors.concat(cars));
+
+
+
+        let myLuckyNumbers = ["4", "6", "1", "99"];
+        document.write("<br>");
+        document.write("________________");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("convert array to string");
+        document.write("<br>");
+        document.write("join===> " + myLuckyNumbers.join());
+        document.write("<br>");
+        document.write(typeof (myLuckyNumbers));
+        document.write("<br>");
+
+        document.write("convert string to array");
+        document.write("<br>");
+        let myMobileNumber = "9986869022";
+        let numberBunch = myMobileNumber.split('');
+        document.write(numberBunch);
+        document.write("<br>");
+        document.write(typeof (numberBunch));
+
+
+        //The copyWithin() method copies array elements to another position in the array, overwriting the existing values.
+        document.write("<br>");
+        let mynames = ["aa", "bb", "cc", "dd", "ee"];
+        document.write(mynames);
+        document.write("<br>");
+        document.write(mynames.copyWithin(2, 0))
+        document.write("<br>");
+
+
+        //The valueof() method in JavaScript is used to return the primitive value of a number.
+
+        var mynumber = 23;
+        document.write(mynumber.valueOf())
+        document.write("<br>");
+        var mynumber = 23.890;
+        document.write(mynumber.valueOf())
+        document.write("<br>");
+
+
+        //===========
+
+
+        const checkCount = (word, alphacount) => {
+            let count = 0;
+            for (let i = 0; i < word.length; i++) {
+                if (word[i] === alphacount) {
+                    count++;
+                }
+            }
+            document.write(word + "**************" + count + "present " + alphacount)
+        }
+
+        checkCount('ranjithkumarhn', 'r');
+
+
+
+        // ================================================================
+
+
+
+        document.write("<br>");
+
+        const checkCountNumbers = (myscoreArray, numberCount) => {
+            //alert(myscoreArray + " " + numberCount)
+            let count = 0;
+            for (let i = 0; i < myscoreArray.length; i++) {
+                if (myscoreArray[i] === numberCount) {
+                    count++;
+                }
+            }
+            document.write(myscoreArray + "~~~~~~~~~~~~~~~~~~~~~~~~~~~" + count + " " + numberCount)
+        }
+
+        let myScore = [23, 35, 57, 23, 68, 79, 23]
+        checkCountNumbers(myScore, 23);
+
+
+    </script>
+</body>
+
+</html>

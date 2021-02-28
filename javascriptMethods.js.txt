@@ -1,0 +1,50 @@
+<script>
+
+let colors =["red","orange","green"];
+colors.push("blue");
+
+document.write("push ===> "+ colors);
+document.write("<br>");
+document.write("________________");
+document.write("<br>");
+colors.pop();
+document.write("pop==> "+ colors);
+document.write("<br>");
+document.write("________________");
+document.write("<br>");
+colors.shift("white");
+document.write("shift ==> "+ colors);
+document.write("<br>");
+document.write("________________");
+document.write("<br>");
+colors.unshift("purple");
+document.write("unshift ==> "+ colors);
+let cars =["skoda","toyota","hyndai"];
+document.write("<br>");
+document.write("________________");
+document.write("<br>");
+document.write("concat==> "+colors.concat(cars));
+let myLuckyNumbers = ["4","6","1","99"];
+document.write("<br>");
+document.write("________________");
+document.write("<br>");
+document.write("<br>");
+document.write("convert array to string");
+document.write("<br>");
+document.write("join===> "+myLuckyNumbers.join(""));
+document.write("<br>");
+document.write("________________");
+document.write("<br>");
+document.write("convert string to array");
+document.write("<br>");
+let myMobileNumber = "9986869022";
+let numberBunch = myMobileNumber.split('');
+document.write(numberBunch);
+document.write("<br>");
+document.write(numberBunch);
+document.write("<br>");
+document.write("________________");
+document.write("<br>");
+
+
+</script>

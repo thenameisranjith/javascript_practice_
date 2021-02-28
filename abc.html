@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>I am ranjith</p>
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                console.log(this.firstName + " " + this.lastName)
+            }
+        };
+        person.fullName()
+
+
+        var array = [
+            { name: "string 1", value: "this", other: "that" },
+            { name: "string 2", value: "this", other: "that" }
+        ];
+
+        var foundValue = array.filter(obj => obj.name === 'string 1');
+
+        console.log(foundValue);
+        alert(JSON.stringify(foundValue))
+    </script>
+
+
+</body>
+
+</html>

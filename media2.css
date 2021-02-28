@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    font-style: italic;
+}
+
+.continer{
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.first-box{ 
+    flex: 1; 
+    font-family: 'Akaya Kanadaka', cursive;
+    text-align: justify;
+    letter-spacing: 2px; 
+    line-height: 1.7;
+}
+
+.second-box{
+    flex: 1;
+}
+
+
+@media(max-width:700px){
+    .continer{
+        display: block;
+        
+    }
+
+    .first-box{
+        color: whitesmoke;
+        font-size: 20px;
+        background-color: darkblue;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:1200px){
+
+    .first-box{
+        word-spacing: 5px;
+    }
+    
+}

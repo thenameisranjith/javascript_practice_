@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function getFrequency(string) {
+            var freq = {};
+            for (var i = 0; i < string.length; i++) {
+                var character = string.charAt(i);
+                if (freq[character]) {
+                    freq[character]++;
+                } else {
+                    freq[character] = 1;
+                }
+            }
+            return freq;
+        }
+
+        var res = getFrequency('ranjithkumarhnrr');
+        document.write(JSON.stringify(res));
+
+
+
+
+        const getFrequencyOfNumber = (numbers) => {
+
+            var count = {};
+
+            for (let i = 0; i < numbers.length; i++) {
+
+                let freq = numbers[i];
+                if (count[freq]) {
+                    count[freq]++
+                }
+                else {
+                    count[freq] = 1
+                }
+
+            }
+            return count;
+        }
+
+
+
+
+
+        let mynumbers = [34, 67, 79, 23, 34, 67, 99, 67];
+
+        console.log(getFrequencyOfNumber(mynumbers))
+
+
+
+    </script>
+</body>
+
+</html>

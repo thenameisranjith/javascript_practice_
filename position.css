@@ -1,0 +1,25 @@
+
+
+.parent {
+    width: 900px;
+    background-color:cadetblue;
+    padding: 50px;
+}
+.child1{
+    background-color: chartreuse;
+    width: 800px;
+    height: 100px;
+    position:absolute;
+    top: 0px;
+    left: 40px;
+}
+.child2{
+    background-color: darkblue;
+    width: 800px;
+    height: 100px;
+}
+.child3{
+    background-color: deeppink;
+    width: 800px;
+    height: 100px;
+}

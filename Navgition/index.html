@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navigation">
+
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="icon"> <i class="fa fa-home" aria-hidden="true"></i></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"> <i class="fa fa-car " aria-hidden="true"></i></span>
+                    <span class="title">News</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"> <i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="title">About</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="toggle" onclick="toggleMenu()">
+    </div>
+
+    <script>
+        const toggleMenu = () => {
+            let navigation = document.querySelector('.navigation')
+            let toggle = document.querySelector('.toggle')
+            navigation.classList.toggle('active')
+            toggle.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>

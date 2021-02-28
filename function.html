@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function myFunction(a, b) {
+        //     console.log(arguments.length);
+        //     return a * b;
+        // }
+        // console.log(myFunction(3, 5));
+
+
+        // (function () {
+        //     var x = "Hello!!";  // I will invoke myself
+        //     console.log(x)
+        // })();
+
+        // function myFunction(a, b) {
+        //     return a * b;
+        // }
+
+        // var txt = myFunction(3, 5).toString
+        // console.log(txt)
+
+
+
+
+
+
+        let details = function (works, place) {
+            console.log(this.firstName + " " + this.lastName + " " + works + " " + place)
+        }
+
+
+
+        person1 = {
+            firstName: "Ranjith",
+            lastName: "Kumar"
+        }
+        person2 = {
+            firstName: "Akshay",
+            lastName: "Saini"
+        }
+
+
+        details.call(person1, "Software Engineer", "Shivamogga")
+        details.call(person2, "Blogger", "Utarakhand");
+        //=========================Apply  DIFFERENCE IS PASS DATA IN ARRAY LIST
+
+        details.apply(person1, ["Software Engineer", "Shivamogga"])
+        details.apply(person2, ["Blogger", "Utarakhand"]);
+
+
+        //=========================bind  DIFFERENCE 
+        let myDetails = details.bind(person1, "Software Engineer", "Shivamogga")
+        console.log("~~~~~" + myDetails)
+        myDetails();
+    </script>
+</body>
+
+</html>

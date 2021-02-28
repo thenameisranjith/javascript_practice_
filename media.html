@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media(max-width: 512px) {
+        #box-1 {
+            background-color: rgb(247, 16, 16);
+            color: white;
+
+        }
+
+        #box-2 {
+            display: none;
+        }
+
+        #box-3 {
+            display: none;
+        }
+    }
+
+    @media(min-width: 512px)and (max-width: 750px) {
+        #box-2 {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        #box-1 {
+            display: none;
+        }
+
+        #box-3 {
+            display: none;
+        }
+    }
+
+    @media(min-width: 750px) {
+        #box-3 {
+            background-color: deeppink;
+            color: white
+        }
+
+        #box-2 {
+            display: none;
+        }
+
+        #box-1 {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div id="box-1" class="box1">
+            <h1>I am mobile device</h1>
+        </div>
+        <div id="box-2" class="box2">
+            <h1>I am tablet device</h1>
+        </div>
+        <div id="box-3" class="box3">
+            <h1>I am desktop device</h1>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="promise.js"></script>
+</head>
+
+<body>
+    <h1>Promise ES6</h1>
+    <h1>Student list</h1>
+    <ul id="students"></ul>
+
+
+    <script>
+        const num = 45;
+        const myPromise = new Promise((res, rej) => {
+            if (num === 67) {
+                res("Resolved Successfully..!")
+            }
+            else {
+                rej("Promise Rejected ")
+            }
+        })
+
+        myPromise.then((msg) => {
+            document.write(msg);
+        }).catch((msg) => {
+            document.write(msg)
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            name: 'ranjiht',
+            age: 26,
+            place: 'Shivamogga',
+            job: 'software Engineer',
+            married: false,
+        }
+
+        console.log(person);
+
+        delete person.married;
+        person.dateOfBirth = "04-04-1995"
+        console.log("==" + JSON.stringify(person));
+
+
+        const obj = {
+            x: 'a',
+            b: 'b',
+            data: 'abc',
+
+        }
+
+        console.log("FIRST " + obj);
+
+        delete obj.data;
+
+        console.log("second " + JSON.stringify(obj));
+
+    </script>
+</body>
+
+</html>

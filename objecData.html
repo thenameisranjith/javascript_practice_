@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const myAwesomeArray = [
+            { id: 1, name: "john", age: 23 },
+            { id: 2, name: "ali", age: 21 },
+            { id: 3, name: "mass", age: 26 },
+            { id: 4, name: "mass", age: 29 },
+            { id: 5, name: "ranjith", age: 26 },
+        ]
+
+        document.write(JSON.stringify(myAwesomeArray))
+        document.write("" + "</br >")
+        const result = myAwesomeArray.filter(item => item.name === "Ranjith")
+        document.write("FILTER===> " + JSON.stringify(result))
+        // const result = myAwesomeArray.filter(item => item.age > 25)
+        // document.write("FILTER===> " + JSON.stringify(result))
+        // const result = myAwesomeArray.filter(item => item.id !== 1)
+        // document.write("FILTER===> " + JSON.stringify(result))
+        document.write("" + "</br >")
+        document.write("==========================================================================================" + "</br >")
+        // myAwesomeArray.forEach(item => console.log(item.name));
+        myAwesomeArray.forEach(item => console.log(JSON.stringify(item)));
+        document.write("==================================FOREACH IN CONSOLE=======================================================" + "</br >")
+        document.write("" + "</br >")
+
+        document.write("==================================MAP=======================================================" + "</br >")
+        const myArray = [34, 56, 68, 79, 79];
+        document.write(myArray)
+        document.write("" + "</br >")
+        document.write(myArray.map(item => item + 3))
+        document.write("" + "</br >")
+        const mapResult = myAwesomeArray.map(item => item)
+        document.write("====> MAP  " + JSON.stringify(mapResult))
+        document.write("" + "</br >")
+        // const mapResult1 = myAwesomeArray.map(item => item.age + 2)
+        // document.write("====> MAP  " + JSON.stringify(mapResult1))
+        // document.write("" + "</br >")
+
+        document.write("==================================SORT=======================================================" + "</br >")
+
+        const sortResult = myAwesomeArray.sort((a, b) => a.name.toLowerCase > b.name.toLowerCase)
+        document.write("====> SORT INC  " + JSON.stringify(sortResult))
+        document.write("" + "</br >")
+        const sortResult1 = myAwesomeArray.sort((a, b) => b.age - a.age)
+        document.write("====> SORT DEC  " + JSON.stringify(sortResult1))
+        document.write("" + "</br >")
+
+        let maxB = myAwesomeArray.sort((a, b) => b.age - a.age)[0];
+        document.write("MAX AGE" + JSON.stringify(maxB))
+
+        const sortByAlpha = myAwesomeArray.sort(function (a, b) {
+            var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+            var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+            if (nameA < nameB) {
+                return -1;
+            }
+            if (nameA > nameB) {
+                return 1;
+            }
+
+            // names must be equal
+            return 0;
+        });
+        document.write("" + "</br >")
+        document.write("SORT BY ALPHA" + JSON.stringify(sortByAlpha));
+        document.write("" + "</br >")
+        document.write("=====================================FIND================================================" + "</br >")
+        document.write("" + "</br >")
+
+        const find = myAwesomeArray.find(item => item.name === "ranjith");
+        document.write("FIND EXAMPLE====>" + JSON.stringify(find));
+        document.write("" + "</br >")
+        document.write("=====================================REDUCE================================================" + "</br >")
+        document.write("" + "</br >")
+        const myscores = [40, 60, 80, 20];
+
+        const res = myscores.reduce((total, value) => total + value);
+        document.write(res + "</br >")
+
+
+        const res2 = myAwesomeArray.reduce((total, item) => total + item.age, 0)
+
+        console.log("ATTEMPT " + JSON.stringify(res2))
+
+
+        const myArraysub = [120, 30, 30];
+        const subResult = myArraysub.reduce((a, b) => a - b);
+        console.log("second attempt" + subResult)
+        document.write(subResult + "</br >")
+        document.write("=====================================SOME================================================" + "</br >")
+
+
+        const myRes = myAwesomeArray.some(item => item.age === 23)
+        document.write(myRes + "</br >")
+        const myRes1 = myArraysub.some(item => item === 120)
+        document.write(myRes1 + "</br >")
+    </script>
+</body>
+
+</html>
